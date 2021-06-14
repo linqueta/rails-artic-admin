@@ -15,6 +15,11 @@ gem 'nokogiri'
 gem 'eezee'
 gem 'paper_trail'
 
+gem 'activeadmin'
+gem 'devise'
+gem 'arctic_admin'
+
+
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'pry-byebug'
