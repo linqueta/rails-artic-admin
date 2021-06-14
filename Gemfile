@@ -18,7 +18,7 @@ gem 'paper_trail'
 gem 'activeadmin'
 gem 'devise'
 gem 'arctic_admin'
-
+gem 'capybara'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
