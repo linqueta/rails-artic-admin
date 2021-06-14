@@ -1,0 +1,74 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+
+Bundler/OrderedGems:
+  Exclude:
+    - "Gemfile"
+
+Style/MixinUsage:
+  Exclude:
+    - "bin/*"
+    - "app/admin/*"
+
+Layout/LineLength:
+  Max: 120
+  Exclude:
+    - "spec/**/*"
+    - "bin/**/*"
+
+Style/Documentation:
+  Enabled: false
+
+Style/AsciiComments:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 35
+  Exclude:
+    - "app/helpers/*"
+
+Rails/FilePath:
+  Enabled: false
+
+Style/OptionalBooleanParameter:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 130
+
+Metrics/BlockLength:
+  Max: 30
+  Exclude:
+    - "spec/**/*"
+    - "app/admin/*"
+    - "app/helpers/*"
+    - "config/**/*"
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
+Metrics/AbcSize:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Lint/MissingSuper:
+  Enabled: false
+
+Naming/VariableNumber:
+  Exclude:
+    - "spec/**/*"
+
+AllCops:
+  TargetRailsVersion: 6.1.3
+  TargetRubyVersion: 3.0.0
+  DisplayCopNames: true
+  SuggestExtensions: false
+  NewCops: "enable"
+  Exclude:
+    - "db/**/*"
