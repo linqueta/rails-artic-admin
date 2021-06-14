@@ -1,0 +1,1 @@
+# rails-artic-admin
