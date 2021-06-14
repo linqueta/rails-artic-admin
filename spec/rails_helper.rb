@@ -11,7 +11,6 @@ abort('The Rails environment is running in production mode!') if Rails.env.produ
 require 'rspec/rails'
 require 'paper_trail/frameworks/rspec'
 require 'super_diff/rspec-rails'
-require 'capybara/rails'
 
 Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
 
